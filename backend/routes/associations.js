@@ -1,5 +1,5 @@
 const express = require("express")
-const fs = require('fs');
+const fs = require('fs')
 const app = express()
 
 const associations = require("../associations")
@@ -29,13 +29,18 @@ app.get("/:name", checkExistingAssoc, (req, res) => {
   res.json(association)
 })
 
-app.post("/", checkExistingAssoc, (req, res) => {
+app.post("/", (req, res) => {
   const message = req.body
+ 
+  messages = [ ...messages, message ]
 
-  messages = { ...req.body, message }
-  
-  fs.writeFile('../messages', JSON.stringify(messages))
+  fs.writeFile("messages.json", JSON.stringify(messages),  function(err) {
+    if (err) {
+       return console.error(err);
+    }
+  })
 
+  res.json(messages)
 })
 
 module.exports = app
