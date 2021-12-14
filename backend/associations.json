@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Les restos du coeur",
+    "slogan": "On compte sur vous !",
+    "description": "Fondés par Coluche en 1985, Les Restos du cœur, association reconnue d'utilité publique, « ont pour but d'aider et d'apporter une assistance bénévole aux personnes démunies, notamment dans le domaine alimentaire par l'accès à des repas gratuits, et par la participation à leur insertion sociale et économique, ainsi qu'à toute l'action contre la pauvreté sous toutes ses formes7. Actuellement, les Restos du Cœur continuent à aider les personnes en difficulté.",
+    "image": "https://fr.wikipedia.org/wiki/Les_Restos_du_c%C5%93ur#/media/Fichier:Restos_du_coeur_Logo.svg"
+  },
+  {
+    "name": "Unicef",
+    "slogan": "Pour chaque enfant, santé, éducation, égalité, protection, faisons avancer l'humanité.",
+    "description": "Le Fonds des Nations unies pour l'enfance, généralement désigné par l'acronyme Unicef (également typographié UNICEF), est une agence de l'Organisation des Nations Unies consacrée à l'amélioration et à la promotion de la condition des enfants. Lors de sa création le 11 décembre 19461, son nom était originellement United Nations International Children's Emergency Fund (Fonds d'urgence international des Nations unies pour l'enfance), dont elle a conservé l'acronyme lors de l'adoption de son nom actuel en 1953, lorsqu'elle est devenue un organe permanent du système des Nations Unies.",
+    "image": "https://fr.wikipedia.org/wiki/Fonds_des_Nations_unies_pour_l%27enfance#/media/Fichier:UNICEF_Logo.svg"
+  },
+  {
+    "name": "Konexio",
+    "slogan": "Faire du numérique une opportunité pour tous.tes.",
+    "description": "Jean Guo a co-fondé Konexio sur la base des recherches académiques  qu’elle a conduit en France sur les difficultés économiques et sanitaires des populations marginalisées, notamment les réfugiés et les migrants. En tant qu’enfant d’immigrés, elle était aux premières loges pour observer les défis sociaux, culturels, éducatifs et professionnels auxquels devaient faire face leur famille en arrivant dans un nouveau pays.",
+    "image": "https://www.konexio.eu/uploads/1/2/0/2/120245745/konexio-logo_1.png"
+  }
+]
