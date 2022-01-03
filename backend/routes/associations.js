@@ -5,7 +5,9 @@ const moment = require("moment")
 const { body, validationResult } = require('express-validator')
 
 const associations = require("../associations")
-let messages = require("../messages")
+
+//ne marche pas si on utilise nodemon, regarde la correction
+let messages = require("../messages") 
 
 const checkExistingAssoc = (req, res, next) => {
   const { name } = req.params
@@ -13,6 +15,7 @@ const checkExistingAssoc = (req, res, next) => {
   const association = associations.find(element => element.name === name)
 
   if(association) {
+    req.association = association //envois direct le resultat trouvé.
     next()
   } else {
     res.status(404).send("Association not found.")
@@ -20,16 +23,18 @@ const checkExistingAssoc = (req, res, next) => {
 }
 
 app.get("/", (req, res) => {
-  res.json(associations)
+  const assocName = associations.map(element => element.name)
+
+  res.json(assocName)
 })
 
 
 app.get("/:name", checkExistingAssoc, (req, res) => {
-  const { name } = req.params
+  // const { name } = req.params
 
-  const association = associations.find(element => element.name === name)
+  // const association = associations.find(element => element.name === name)
 
-  res.json(association)
+  res.json(req.association) //on recupere le resultat depuis middleware
 })
 
 //creation d'un message
